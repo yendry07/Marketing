@@ -1,0 +1,486 @@
+﻿@import url('../../css2.css');
+:root{
+    --primario:#6B9DD4;
+    --secundario:#D46BD2;
+    --terciario:#D4A26B;
+    --cuaternario:#6BD46E;
+    --titulos:'Montserrat';
+    --cuerpo:'Roboto Mono';
+}
+:root{
+    scroll-behavior: smooth;
+}
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+body {
+    font-family: var(--cuerpo);
+    font-size: 16px;
+    background: rgb(243, 243, 243);
+
+}
+.hola{
+    width: 100%;
+    height: 1px;
+}
+.contenedor-fondo{
+    height: 50%;
+    position: fixed;
+    left: 0;
+    background-size: cover;
+    overflow: hidden;
+      z-index: -10;
+}
+.imagenbody{
+
+    height: 100%;
+
+}
+.contenedor-fondo2{
+    height: 70%;position: fixed;
+    right: 0;
+    top: 30%;
+    background-size: cover;
+    overflow: hidden;
+      z-index: -10;
+}
+.what{
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    position: fixed;
+    bottom: 3vh;
+    right: 0;
+    margin: 20px;
+    background-size: cover;
+    box-shadow: 0px 0px 25px rgba(0, 0, 0, 0.1);
+    z-index: 10;
+}
+.logo{
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+
+}
+.teleg{
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    position: fixed;
+    bottom: 15vh;
+
+    right: 0px;
+    margin: 20px;
+    background-size: cover;
+    box-shadow: 0px 0px 25px rgba(0, 0, 0, 0.1);
+    z-index: 10;
+}
+.logo2{width: 100%;
+    height: 100%;
+    border-radius: 50%;
+}
+.hamburguer{
+    position: fixed;
+    top: 30px;
+    left: 2%;
+    background: #fff;
+    width: 40px;
+    height: 40px;
+    cursor: pointer;
+    border-radius: 50%;
+    box-shadow: 0px 0px 25px rgba(0, 0, 0, 0.1);
+    z-index: 10;
+}
+.hamburguer2{
+    position: absolute;
+    top: 30px;
+    right: 2%;
+    background: #fff;
+    width: 50px;
+    height: 50px;
+    cursor: pointer;
+    border-radius: 50%;
+    box-shadow: 0px 0px 25px rgba(0, 0, 0, 0.1);
+    z-index: 10;
+    text-align: center;
+    align-items: center;
+}
+.fijo{
+    display: inline-block;
+    margin: auto;
+    width: 100%;
+    height: 100%;
+    font-size: 25px;
+    line-height: 50px;
+    color: black;
+}
+.menu-navegacion{
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 40vw;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.829);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    transition: transform .3s ease-in-out;
+    transform: translate(-110%);
+    box-shadow: 0 0 6px rgba(0,0,0,.5);
+    z-index: 10;
+
+}
+.edit{
+    font-size: 40px;
+    position: absolute;
+    left: 14%;
+}
+
+.spread{
+    transform: translate(0);
+}
+.contenido-navegacion{
+
+  position: relative;
+}
+.menu-navegacion a{
+    color:#fff;
+    text-decoration: none;
+    margin: 5px 0px 5px 30%;
+    display: flex;
+    align-items: center;
+    margin-top: 10px;
+    width: 60%;
+    height: 50px;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.5) ;
+}
+
+.contenedor {
+    width: 90%;
+    max-width: 1000px;
+    margin: auto;
+    overflow: hidden;
+    margin-bottom: 20px;
+
+}
+
+
+
+/*Textos*/
+.cards-1{
+    width: 100%;
+    display: flex;
+    margin: auto;
+    margin-top: 100px;
+    flex-wrap: wrap;
+    align-items: center;
+
+}
+.card2 {
+    display: inline-block;
+    position: relative;
+    width: 80%;
+    margin: auto;
+    padding: 20px;
+    margin-bottom: 30px;
+    border-radius: 6px;
+    color: rgba(0, 0, 0, 0.87);
+    background: #fff;
+    box-shadow: 0px 0px 25px rgba(0, 0, 0, 0.1);
+}
+.table {
+    margin-bottom: 0px;
+    display: flex;
+    flex-direction: column;
+}
+.table p{
+    margin-top: 7px;
+}
+.primero{
+    display: block;
+    text-align: center;
+    font-size: 30px;
+    font-weight: bold;
+    font-family: var(--titulos);
+}
+
+/*Pasos*/
+.section-pasos{
+    display: flex;
+    justify-content: space-evenly;
+    flex-direction:column;
+    justify-items: center;
+    align-items: center;
+    flex-wrap: wrap;
+    width: 100%;
+    margin: auto;
+}
+.section-pasos .contenedor{
+    margin: auto;
+}
+.pasos{
+    margin-top: 30px ;
+}
+.pasos .subtitulo{
+    font-size: 25px;
+    text-align: center;
+
+    font-weight: bold;
+    margin-bottom: 32px;
+    font-family: var(--cuerpo);
+}
+.subtitulo span{
+    background: var(--cuaternario);
+    color: rgb(255, 255, 255);
+    border-radius: 50%;
+    display: inline-block;
+    text-align: center;
+    width: 39px;
+    height: 39px;
+    padding: auto 5px;
+    margin: 0 10px 0 5px;
+}
+.cards-1 .contenedor{
+    width: 50%;
+}
+.imagen-registro{
+    width: 25%;
+    display: block;
+
+    z-index: 0;
+
+    overflow: hidden;
+    background-size:cover ;
+    margin: 20px auto;
+    border-radius: 10px;
+    box-shadow: 0px 0px 25px rgba(0, 0, 0, 0.1);
+
+
+}
+.imagen-registro img{
+    width: 100%;
+    height: 100%;
+}
+
+.video{
+    display: block;
+    margin: auto;
+}
+.parrafo {
+    justify-content: justify;
+}
+
+
+
+/* Footer */
+footer{
+    background: var(--primario);
+    font-family: var(--titulos);
+    width: 100%;
+    padding: 0.1px;
+    margin-top: 20px ;
+    height: 300px;
+    padding-top: 5vh;
+
+}
+footer .contenedor{
+    max-width: none;
+    width: 100%;
+
+    display: flex;
+    flex-wrap: wrap;
+    padding-bottom: 25px;
+}
+.copy{
+     font-size: 50px;
+     font-weight: 300;
+     padding: 10px;
+     border-bottom: 1px solid rgba(255, 255, 255, 0.534);
+     width: 90%;
+     margin: auto;
+
+     color: #fff;
+
+ }
+ .sociales{
+     width: 95%;
+     text-align: initial;
+     font-size: 32px;
+     margin-left: 5% ;
+     display: flex;
+     margin-top: 10px;
+
+
+ }
+ .sociales a{
+
+     text-decoration: none;
+     color: #fff;
+
+     width: 60px;
+     height: 60px;
+     line-height: 50px;
+     text-align: center;
+     margin-left: 15px;
+     border: 1px solid rgba(255, 255, 255, 0.774);
+
+     border-radius: 50%;
+     line-height: 60px;
+
+ }
+ .sociales a:hover{
+    color: #4383C9;
+    background: rgba(255, 255, 255, 0.856);
+
+
+ }
+
+
+
+/*Responsive*/
+@media screen and (max-width:900px){
+    .menu-navegacion{
+        width: 50%;
+    }
+    .edit{
+        font-size: 20px;
+
+
+    }
+    .menu-navegacion a{
+        font-size: 14px;
+        margin-left: 25%;
+        margin-top: 0;
+
+    }
+    .contenido-navegacion{
+        margin-top: 0px;
+    }
+    .cards-1 .contenedor{
+        width: 80%;
+    }
+
+    .imagen-registro{
+        width: 60%;
+    }
+
+}
+@media screen and (max-width:670px){
+    .menu-navegacion{
+        width: 70%;
+    }
+}
+
+@media screen and (max-width:550px){
+    .menu-navegacion{
+        width: 100%;
+    }
+    .what{
+        width: 45px;
+        height: 45px;
+    }
+    .teleg{
+        bottom: 12vh;
+        width: 45px;
+        height: 45px;
+    }
+    .imagen-registro{
+        width: 80%;
+    }
+    .pasos .subtitulo{
+        font-size: 20px;
+
+    }
+    /*FOOTER*/
+    .copy{
+        text-align: center;
+        font-size: 35px;
+
+    }
+}
+@media screen and (max-width:365px){
+    .contenedor-fondo{
+        height: 30%;
+    }
+    .copy{
+        font-size: 25px;
+    }
+    .cards-1 .contenedor{
+        width: 90%;
+    }
+    .card2{
+        width: 90%;
+    }
+    .imagen-registro{
+        width: 100%;
+    }
+    .primero{
+        font-size: 20px;
+    }
+}
+@media screen and (max-width:260px){
+    .menu-navegacion a{
+        margin-top: 9px;
+        margin-bottom: 1px;
+    }
+    /*fOOTER*/
+    .sociales{
+        flex-direction: column;
+    }
+}
+
+/*Responsive height*/
+
+@media screen and (max-height:550px){
+    .teleg{
+        bottom: 15vh;
+    }
+}
+
+@media screen and (max-height:460px){
+    /*Menu Navegacion*/
+    .menu-navegacion a{
+        margin-top: 5px;
+        padding-bottom: 5px;
+        font-size: 15px;
+        height: auto;
+
+    }
+    .edit{
+        font-size: 20px;
+    }
+    .teleg{
+        bottom: 17vh;
+    }
+}
+@media screen and (max-height:315px){
+    .menu-navegacion a{
+        font-size: 12px;
+    }
+    .edit{
+        font-size: 12px;
+    }
+    .teleg{
+        bottom: 20vh;
+
+    }
+
+}
+@media screen and (max-height:290px){
+    .menu-navegacion a{
+        font-size: 12px;
+        margin-top: 0;
+        padding-bottom: 0;
+    }
+    .edit{
+        font-size: 12px;
+    }
+    .teleg{
+        bottom: 25vh;
+
+    }
+
+}
